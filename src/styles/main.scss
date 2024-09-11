@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1a1a1a;
+    width: 100vw;
+    height: 100vh;
+    color: #f9f9f9;
+    font-family: Poppins, sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+    .birthday {
+        img {
+            width: 300px;
+            border-radius: 1rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .title {
+            font-size: 3rem;
+            font-weight: 600;
+            line-height: 2.5rem;
+
+            span {
+                font-size: 2rem;
+            }
+        }
+    }
+
+    .gift {
+        margin-top: 5rem;
+
+        .text {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .btn {
+            width: 120px;
+            padding: 1rem;
+            border-radius: 0;
+            border: 0;
+            color: #f9f9f9;
+            font-family: Poppins, sans-serif;
+            font-weight: 700;
+            font-size: 1.25rem;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+
+        .yes {
+            background-color: darkgreen;
+
+            &:hover {
+                background-color: green;
+            }
+        }
+
+        .no {
+            background-color: darkred;
+
+            &:hover {
+                background-color: firebrick;
+            }
+        }
+    }
+
+    .alert {
+        .title {
+            font-size: 1.5rem;
+            line-height: 1rem;
+        }
+
+        span {
+            color: darkred;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+    }
+
+}
